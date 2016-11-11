@@ -42,8 +42,10 @@ This will install all dependencies and start the local Go server.
 
 If you prefer hot-reloading or only need to work on the client, consider also installing something like [webpack-dev-server](https://www.npmjs.com/package/webpack-dev-server).
 
+## Future iterations:
+
+Please follow [the issues section](https://github.com/blinkanalytics/typereact/issues) to see where it will go from here and to report any bugs/suggestions. Contributions and forks are most welcome!
+
 ## License
 
-Copyright (C) 2016 Blink Analytics, distributed per the MIT license.
-
-See [LICENSE file](https://github.com/blinkanalytics/typereact/blob/master/LICENSE) for details
+Copyright (C) 2016 Blink Analytics, distributed per [the MIT license](https://github.com/blinkanalytics/typereact/blob/master/LICENSE).
