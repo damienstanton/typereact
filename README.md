@@ -17,6 +17,8 @@ Current Health:
 
 [![CircleCI](https://circleci.com/gh/blinkanalytics/typereact.svg?style=shield&circle-token=083647c2df4d3b0478290e959e70c1fd9efd38c7)](https://circleci.com/gh/blinkanalytics/typereact)
 
+[![Go report card](https://goreportcard.com/badge/github.com/blinkanalytics/typereact)](https://goreportcard.com/report/github.com/blinkanalytics/typereact)
+
 # Why?
 
 Due to the great flux of JS community efforts, most starter kits we have found were too complex or outdated, and none had a simple means of dealing with Babel/ES6, Flow, Eslint and Webpack.
