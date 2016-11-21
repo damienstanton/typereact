@@ -3,7 +3,7 @@
 
 Environment:
 
-![Go version](https://img.shields.io/badge/go-1.6.2-blue.svg)
+![Go version](https://img.shields.io/badge/go-1.7.3-blue.svg)
 
 ![Node version](https://img.shields.io/badge/npm-3.10.8-orange.svg)
 
