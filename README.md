@@ -9,8 +9,6 @@ Environment:
 
 ![TS version](https://img.shields.io/badge/typescript-2.0.7-brightgreen.svg)
 
-![make version](https://img.shields.io/badge/make-3.8.1-lightgrey.svg)
-
 Current Health:
 
 [![CircleCI](https://circleci.com/gh/blinkanalytics/typereact.svg?style=shield&circle-token=083647c2df4d3b0478290e959e70c1fd9efd38c7)](https://circleci.com/gh/blinkanalytics/typereact)
@@ -34,7 +32,7 @@ There are also some design decisions that we wanted to make for all internal pro
 
 At your terminal, simply type
 ```sh
-make dev
+npm run dev
 ```
 This will install all dependencies and start the local Go server.
 
