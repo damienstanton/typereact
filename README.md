@@ -9,8 +9,6 @@ Environment:
 
 ![TS version](https://img.shields.io/badge/typescript-2.0.7-brightgreen.svg)
 
-![typings version](https://img.shields.io/badge/typings-1.5.0-brightgreen.svg)
-
 ![make version](https://img.shields.io/badge/make-3.8.1-lightgrey.svg)
 
 Current Health:
@@ -48,4 +46,4 @@ Please follow [the issues section](https://github.com/blinkanalytics/typereact/i
 
 ## License
 
-Copyright (C) 2016 Blink Analytics, distributed per [the MIT license](https://github.com/blinkanalytics/typereact/blob/master/LICENSE).
+Copyright (C) 2016 Blink Analytics (TM), distributed per [the MIT license](https://github.com/blinkanalytics/typereact/blob/master/LICENSE).
