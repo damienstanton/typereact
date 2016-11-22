@@ -7,3 +7,4 @@ vendor/
 *.o
 *.a
 *.so
+npm-debug.log
