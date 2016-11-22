@@ -1,3 +1,7 @@
+general:
+  branches:
+    ignore:
+      - hotreload
 test:
   override:
     - npm run test
