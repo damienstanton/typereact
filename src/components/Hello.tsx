@@ -3,7 +3,7 @@ import * as Immutable from "immutable";
 
 export interface HelloProps { compiler: string; framework: string; }
 
-const imVal = Immutable.fromJS({A: 1});
+const imVal = Immutable.fromJS({A: 2});
 
 export class Hello extends React.Component<HelloProps, {}> {
     render() {

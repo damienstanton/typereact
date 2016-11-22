@@ -4,7 +4,7 @@
   "description": "A minimal TypeScript/React/Go starter kit",
   "main": "index.js",
   "scripts": {
-    "dev": "npm i && npm link webpack && webpack && cd server && go build -o ./bin/server && ./bin/server",
+    "dev": "npm i && npm link webpack && webpack && cd server && go get github.com/blinkanalytics/fresh && fresh -c ./dev.conf",
     "test": "npm i && npm link webpack && webpack && cd server && go test -cover && go build -o ./bin/server"
   },
   "repository": {

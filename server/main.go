@@ -1,17 +1,20 @@
 package main
 
 import (
-	"net/http"
-
 	"log"
+	"os"
+
+	"github.com/gin-gonic/gin"
 )
 
-func main() {
-	fs := fileServer()
-	log.Print("Listening on port 8000")
-	log.Fatal(http.ListenAndServe(":8000", fs))
-}
+var port = os.Getenv("$PORT")
 
-func fileServer() http.Handler {
-	return http.FileServer(http.Dir("../"))
+func main() {
+	router := gin.Default()
+	router.Static("/", "../")
+	if port == "" {
+		port = "8000"
+	}
+	log.Printf("Listening for *NEW* changes on port %v\n", port)
+	router.Run(":" + port)
 }
