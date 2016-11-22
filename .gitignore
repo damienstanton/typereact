@@ -1,6 +1,10 @@
+.vscode/
 node_modules/
 dist/
 server/bin
+tmp/
+vendor/
 *.o
 *.a
 *.so
+npm-debug.log
