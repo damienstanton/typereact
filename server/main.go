@@ -1,20 +1,26 @@
 package main
 
 import (
+	"fmt"
 	"log"
+	"net/http"
 	"os"
 
-	"github.com/gin-gonic/gin"
+	"github.com/gorilla/mux"
 )
 
 var port = os.Getenv("$PORT")
 
 func main() {
-	router := gin.Default()
-	router.Static("/", "../")
+	r := mux.NewRouter()
+	s := http.FileServer(http.Dir("../"))
+	r.PathPrefix("/").Handler(s)
+	http.Handle("/", r)
 	if port == "" {
 		port = "8000"
 	}
-	log.Printf("Listening for *NEW* changes on port %v\n", port)
-	router.Run(":" + port)
+	fmt.Printf("Listening on port %v...\n", port)
+	if err := http.ListenAndServe(":"+port, nil); err != nil {
+		log.Fatalf("problem :%v", err)
+	}
 }

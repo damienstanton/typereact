@@ -38,7 +38,9 @@ This will install all dependencies and start the local Go server.
 
 ## Roadmap:
 
-A common request has been a hot-reload server, so [issue #4](https://github.com/blinkanalytics/typereact/issues/4) tracks my progress on this effort. In the meantime, consider installing something like [webpack-dev-server](https://www.npmjs.com/package/webpack-dev-server).
+- [ ] Hot-reload server, [see issue #4](https://github.com/blinkanalytics/typereact/issues/4) for progress. 
+
+In the meantime, consider installing something like [webpack-dev-server](https://www.npmjs.com/package/webpack-dev-server).
 
 ## Issues:
 
