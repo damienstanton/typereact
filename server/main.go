@@ -3,23 +3,38 @@ package main
 import (
 	"fmt"
 	"log"
+	"net"
 	"net/http"
-	"os"
+	"strconv"
 
 	"github.com/gorilla/mux"
 )
 
-var port = os.Getenv("PORT")
+// freePort asks the kernel for an open port and returns it as a string
+// based on github.com/phayes/freeport
+func freePort() string {
+	addr, err := net.ResolveTCPAddr("tcp", "localhost:0")
+	if err != nil {
+		panic(err)
+	}
+
+	l, err := net.ListenTCP("tcp", addr)
+	if err != nil {
+		panic(err)
+	}
+	defer l.Close()
+	return strconv.Itoa(l.Addr().(*net.TCPAddr).Port)
+}
 
 func main() {
-	r := mux.NewRouter()
-	s := http.FileServer(http.Dir("../"))
-	r.PathPrefix("/").Handler(s)
-	http.Handle("/", r)
-	if port == "" {
-		port = "8000"
-	}
-	fmt.Printf("Listening on port %v...\n", port)
+	port := freePort()
+	router := mux.NewRouter()
+	dir := http.FileServer(http.Dir("../"))
+
+	router.PathPrefix("/").Handler(dir)
+	http.Handle("/", router)
+
+	fmt.Printf("Listening for info on port %v...\n", port)
 	if err := http.ListenAndServe(":"+port, nil); err != nil {
 		log.Fatalf("problem :%v", err)
 	}
