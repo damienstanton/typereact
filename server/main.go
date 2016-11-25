@@ -9,7 +9,7 @@ import (
 	"github.com/gorilla/mux"
 )
 
-var port = os.Getenv("$PORT")
+var port = os.Getenv("PORT")
 
 func main() {
 	r := mux.NewRouter()
