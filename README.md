@@ -1,6 +1,6 @@
 ## TypeReact
 
-| health | [![CircleCI](https://circleci.com/gh/blinkanalytics/typereact/tree/master.svg?style=shield&circle-token=083647c2df4d3b0478290e959e70c1fd9efd38c7)](https://circleci.com/gh/blinkanalytics/typereact) [![Go report card](https://goreportcard.com/badge/github.com/blinkanalytics/typereact)](https://goreportcard.com/report/github.com/blinkanalytics/typereact)|
+| health | [![CircleCI](https://circleci.com/gh/damienstanton/typereact/tree/master.svg?style=shield)](https://circleci.com/gh/damienstanton/typereact/tree/master) [![Go report card](https://goreportcard.com/badge/github.com/blinkanalytics/typereact)](https://goreportcard.com/report/github.com/blinkanalytics/typereact)|
 | ---------| ----- |
 | env | ![Go version](https://img.shields.io/badge/go-1.7.3-blue.svg) ![Node version](https://img.shields.io/badge/npm-3.10.8-orange.svg) ![TS version](https://img.shields.io/badge/typescript-2.0.7-brightgreen.svg)|
 
