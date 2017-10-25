@@ -27,7 +27,11 @@ This will install all dependencies and start the local Go server.
 
 ## Roadmap:
 
-A common request has been a hot-reload server, so [issue #4](https://github.com/blinkanalytics/typereact/issues/4) tracks my progress on this effort. In the meantime, consider installing something like [webpack-dev-server](https://www.npmjs.com/package/webpack-dev-server).
+#### Maintenance Mode ####
+
+~A common request has been a hot-reload server, so [issue #4](https://github.com/blinkanalytics/typereact/issues/4) tracks my progress on this effort. In the meantime, consider installing something like [webpack-dev-server](https://www.npmjs.com/package/webpack-dev-server).~
+
+It's been quite some time since I have worked on this. It is still a solid starter kit but is considered in maintenance mode. Feel welcome to fork _typereact_ as a base for your next cool app kit 🙂
 
 ## Issues:
 
@@ -35,4 +39,4 @@ Please follow [the issues section](https://github.com/blinkanalytics/typereact/i
 
 ## License
 
-Copyright (C) 2016 Blink Analytics (TM), distributed per [the MIT license](https://github.com/blinkanalytics/typereact/blob/master/LICENSE).
+Copyright (C) 2016-2017 Blink Analytics (TM), distributed per [the MIT license](https://github.com/blinkanalytics/typereact/blob/master/LICENSE).
